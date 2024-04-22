@@ -1,5 +1,5 @@
-#define FREEGLUT_STATIC
-#define _LIB
+//#define FREEGLUT_STATIC
+//#define _LIB
 //#include <GL/glut.h>
 #include "../include/freeglut/GL/glut.h"
 #include <windows.h>
