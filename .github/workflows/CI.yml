@@ -16,7 +16,7 @@ jobs:
       uses: darenm/Setup-VSTest@v1.2
 # building sln in release 
     - name: build release
-      run: msbuild RotatingEarth.sln /p:Configuration=Release
+      run: msbuild RotatingEarth.sln /p:Configuration=Release /p:AdditionalLibPaths=inclide/freeglut/freeglutd.lib
 
 # building sln in debug 
     - name: build debug
