@@ -80,8 +80,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\DAV\source\repos\RotatingEarth\include\glew\x64;C:\Users\DAV\source\repos\RotatingEarth\include\freeglut;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\DAV\source\repos\RotatingEarth\include\glew\x64;C:\Users\DAV\source\repos\RotatingEarth\include\freeglut;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\include\freeglut;$(IncludePath)</IncludePath>
+    <LibraryPath>..\include\freeglut;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
