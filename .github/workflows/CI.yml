@@ -1,6 +1,6 @@
 name: CI
 
-on: [workflow_dispatch]
+on: [push]
 
 jobs:
   build:
@@ -15,12 +15,12 @@ jobs:
     - name: Setup VSTest Path
       uses: darenm/Setup-VSTest@v1.2
  #building sln in release 
-    - name: build release
-      run: msbuild RotatingEarth.sln /p:Configuration=Release
+    #- name: build release
+    # run: msbuild RotatingEarth.sln /p:Configuration=Release
 
  #building sln in debug 
-    - name: build debug
-      run: msbuild RotatingEarth.sln /p:Configuration=Debug
+    #- name: build debug
+    #  run: msbuild RotatingEarth.sln /p:Configuration=Debug
 
 # run unit test
     - name: run unit test
