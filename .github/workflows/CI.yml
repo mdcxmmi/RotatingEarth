@@ -14,13 +14,13 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
     - name: Setup VSTest Path
       uses: darenm/Setup-VSTest@v1.2
-# building sln in release 
-#    - name: build release
-#      run: msbuild RotatingEarth.sln /p:Configuration=Release /p:AdditionalLibPaths=inclide/freeglut/freeglutd.lib
+ #building sln in release 
+    - name: build release
+      run: msbuild RotatingEarth.sln /p:Configuration=Release
 
-# building sln in debug 
-#    - name: build debug
-#      run: msbuild RotatingEarth.sln /p:Configuration=Debug
+ #building sln in debug 
+    - name: build debug
+      run: msbuild RotatingEarth.sln /p:Configuration=Debug
 
 # run unit test
     - name: run unit test
