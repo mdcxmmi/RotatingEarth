@@ -87,7 +87,7 @@ void CreateSphere(double R, double H, double K, double Z) {
 }
 
 void increaseAngle() {
-    angle += 0.1;
+    angle += 0.2;
 }
 
 void display(void) {
