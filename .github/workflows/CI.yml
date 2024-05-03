@@ -1,6 +1,6 @@
 name: CI
 
-on: [push]
+on: [workflow_dispatch]
 
 jobs:
   build:
@@ -21,6 +21,11 @@ jobs:
  #building sln in debug 
     #- name: build debug
     #  run: msbuild RotatingEarth.sln /p:Configuration=Debug
+
+ #building sln 
+    - name: build debug
+      run: msbuild RotatingEarth.sln
+
 
 # run unit test
     - name: run unit test
