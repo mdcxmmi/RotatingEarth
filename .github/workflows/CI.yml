@@ -17,12 +17,12 @@ jobs:
 
 
  #building sln 
-    - name: build debug
+    - name: build
       run: msbuild RotatingEarth.sln
 
 
 # run unit test
     - name: run unit test
-      working-directory: x64/Debug
+      working-directory:  D:\a\RotatingEarth\RotatingEarth\x64\Debug
       run: vstest.console.exe Tests.dll
       
