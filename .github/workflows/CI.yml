@@ -23,6 +23,6 @@ jobs:
 
 # run unit test
     - name: run unit test
-      working-directory:  D:\a\RotatingEarth\RotatingEarth\x64\Debug
+      working-directory:  \x64\Debug
       run: vstest.console.exe Tests.dll
       
